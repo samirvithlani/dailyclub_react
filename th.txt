@@ -1,0 +1,65 @@
+MERN:
+m:mongo db :
+e:Express
+r:react
+n:node js
+
+library   :  React js
+          :  next,vite,remix
+framework :Angular,spring,hibernate
+
+db => 50 line... framework
+
+dom node : create.aljlksslkas  --> 10
+
+react js was developed by facebook : now it open source
+
+js : browser 
+js : server side : node js
+-----------------------------------------------------------
+JDK>2 JVM,jre --> .jar --> packages --> classes --> methods -->
+node -->npm  --> node_modules --> build --> pacakges --> .js
+C:\Program Files\nodejs npm\node_modules --> build 
+node pacakge manager
+
+
+d:
+ projects
+    batchname|comany|name
+       open cmd
+       npx create-react-app learning25
+
+
+
+start: fe -->index.html -->be-->index.js --> app.js
+
+spa: single page application: -index.html
+
+
+component:
+class based comp
+function based comp: 16.x --> 18.x -->19.x
+styling:
+
+
+
+function :
+
+download ext
+ES7 +....
+
+
+var name = "Ram";
+  var age = 23;
+  var isActive = false;
+  var user = {
+    id: 1,
+    name: "Seeta",
+  };
+
+<h1>Hello</h1>
+      <h1>Name = {name}</h1>
+      <h2>Age = {age}</h2>
+      <h3>Active? {isActive == true ? "Active" : "Not Active"}</h3>
+      <h3>Active? {isActive ? "Active" : "Not Active"}</h3>
+      <h1>id = {user.id}</h1>
