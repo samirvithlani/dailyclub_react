@@ -63,3 +63,20 @@ var name = "Ram";
       <h3>Active? {isActive == true ? "Active" : "Not Active"}</h3>
       <h3>Active? {isActive ? "Active" : "Not Active"}</h3>
       <h1>id = {user.id}</h1>
+
+
+communication bw  component
+parent -> child component
+
+there are 3 ways:
+props:
+context:
+redux:
+
+
+props:
+property
+props is immutable: Read only:
+
+props data access only in immidiate child component
+props drilling:
