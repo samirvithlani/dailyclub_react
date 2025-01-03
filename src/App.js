@@ -6,6 +6,8 @@ import { Footer } from "./components/Footer";
 import { Employee } from "./components/employee/Employee";
 import { MapDemo } from "./components/MapDemo";
 import { MapDemo2 } from "./components/MapDemo2";
+import { Student } from "./components/student/Student";
+import { Sales } from "./components/sales/Sales";
 
 function App() {
   // at time we can return only 1 tag.
@@ -17,8 +19,10 @@ function App() {
   return (
     <div className="App">
       <Header title = {title}></Header>
+      {/* <Student></Student> */}
+      {/* <Sales></Sales> */}
       {/* <MapDemo></MapDemo> */}
-      <MapDemo2></MapDemo2>
+      {/* <MapDemo2></MapDemo2> */}
       {/* <Employee title = {title}></Employee> */}
       {/* <Content></Content>
       <Footer></Footer> */}

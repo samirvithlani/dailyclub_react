@@ -80,3 +80,24 @@ props is immutable: Read only:
 
 props data access only in immidiate child component
 props drilling:
+
+
+student list :
+
+student component:
+iterate: student list component
+
+
+sales:
+transcationID
+unit
+category:
+profit
+
+unit sold > 100 green
+category grocessary || fashion : red only cat red...
+profit: 30% green underline ... 
+
+
+
+
