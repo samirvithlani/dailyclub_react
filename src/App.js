@@ -4,6 +4,8 @@ import { Header } from "./components/Header"; //export const... {Header} as obje
 import Content from "./components/Content"; //export default Content as file...
 import { Footer } from "./components/Footer";
 import { Employee } from "./components/employee/Employee";
+import { MapDemo } from "./components/MapDemo";
+import { MapDemo2 } from "./components/MapDemo2";
 
 function App() {
   // at time we can return only 1 tag.
@@ -15,7 +17,9 @@ function App() {
   return (
     <div className="App">
       <Header title = {title}></Header>
-      <Employee title = {title}></Employee>
+      {/* <MapDemo></MapDemo> */}
+      <MapDemo2></MapDemo2>
+      {/* <Employee title = {title}></Employee> */}
       {/* <Content></Content>
       <Footer></Footer> */}
     </div>
