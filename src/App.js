@@ -24,12 +24,12 @@ function App() {
       <Header title = {title}></Header>
       {/* <UsestateDemo></UsestateDemo> */}
       {/* <UseStateDemo2></UseStateDemo2> */}
-      <UseStatedemo3></UseStatedemo3>
+      {/* <UseStatedemo3></UseStatedemo3> */}
       {/* <Student></Student> */}
       {/* <Sales></Sales> */}
       {/* <MapDemo></MapDemo> */}
       {/* <MapDemo2></MapDemo2> */}
-      {/* <Employee title = {title}></Employee> */}
+      <Employee title = {title}></Employee>
       {/* <Content></Content>
       <Footer></Footer> */}
     </div>

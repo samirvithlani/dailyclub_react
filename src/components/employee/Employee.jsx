@@ -3,6 +3,10 @@ import { SubEmployee } from './SubEmployee'
 
 //array --> subemployee..
 export const Employee = (props) => {
+
+  const getEmp = ()=>{
+    alert("get emp called...")
+  }
   var employees = [
     {
       id:101,
@@ -21,7 +25,7 @@ export const Employee = (props) => {
             <span>Title {props.title}</span>
         </h1>
 
-        <SubEmployee title = {props.title} employees={employees}></SubEmployee>
+        <SubEmployee title = {props.title} employees={employees} getEmp={getEmp}></SubEmployee>
     </div>
   )
 }

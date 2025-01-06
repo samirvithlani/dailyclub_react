@@ -13,6 +13,7 @@ export const SubEmployee = (props) => {
           })
         }
       </ul>
+      <button onClick={()=>{props.getEmp()}}>click</button>
     </div>
   )
 }
