@@ -101,3 +101,39 @@ profit: 30% green underline ...
 
 
 
+forgot password:->
+
+click -->page --> user email [emter email]---> forgotpassword --> email --> backend check -->email exist->
+if exist --> user email exist --> otp --> email --->
+enter otp --> 1234 -->correct -->new page resetpasswod --> password --> 2nd api -->reset password -> email --> password update 
+
+NOte:
+1234
+otp -->
+1234 
+
+otpSchema :- otp -->stgore :email time stamp:
+
+if verify : delete
+if not -> : delete
+
+
+hooks:
+react v 16: functional compoanet
+
+either it is builtin functino: life cycle function
+
+all hooks starts with use word
+
+useState:
+
+DOM: document object model:
+
+react js virtual dom:
+
+DOM --><<<< copy vdom
+
+change --> DOM update...
+react  vdom ---> will compare changes with ogdom -->
+
+
