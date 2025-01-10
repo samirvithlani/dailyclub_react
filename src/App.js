@@ -14,6 +14,7 @@ import { UseStatedemo3 } from "./components/UseStatedemo3";
 import { MapDemo1 } from "./components/harshika/MapDemo1";
 import { MapDemo2 } from "./components/harshika/MapDemo2";
 import { UseStateDemo } from "./components/harshika/UseStateDemo";
+import { Employees } from "./components/harshika/Employees";
 
 function App() {
   // at time we can return only 1 tag.
@@ -27,7 +28,8 @@ function App() {
       <Header title = {title}></Header>
       {/* <MapDemo1></MapDemo1> */}
       {/* <MapDemo2></MapDemo2> */}
-      <UseStateDemo></UseStateDemo>
+      {/* <UseStateDemo title = {title}></UseStateDemo> */}
+      <Employees title ={title}></Employees>
 
       {/* <UsestateDemo></UsestateDemo> */}
       {/* <UseStateDemo2></UseStateDemo2> */}

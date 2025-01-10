@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 
-export const UseStateDemo = () => {
+export const UseStateDemo = (props) => {
+
+  //props ={title:"value,,,,"}
+
+
     //var count =0;
     //count = stateVariable
     //setCount =>function
@@ -16,7 +20,7 @@ export const UseStateDemo = () => {
 
   return (
     <div>
-        <h1>USE STATE DEMO</h1>
+        <h1>USE STATE DEMO {props.title}</h1>
         <h1>count = {count}</h1>
         <button onClick={increseCount}>increse</button>
     </div>

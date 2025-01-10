@@ -150,3 +150,7 @@ og : vcopy
 change : vdom --> dom....
 
  =compnsnt statevariable
+
+ communication bw components:
+
+ parent child componet
