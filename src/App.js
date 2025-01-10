@@ -16,6 +16,7 @@ import { MapDemo2 } from "./components/harshika/MapDemo2";
 import { UseStateDemo } from "./components/harshika/UseStateDemo";
 import { Employees } from "./components/harshika/Employees";
 import { InputHandling } from "./components/input/InputHandling";
+import { Products } from "./components/input/Products";
 
 function App() {
   // at time we can return only 1 tag.
@@ -27,7 +28,8 @@ function App() {
   return (
     <div className="App">
       <Header title = {title}></Header>
-      <InputHandling/>
+      {/* <InputHandling/> */}
+      <Products></Products>
       {/* <MapDemo1></MapDemo1> */}
       {/* <MapDemo2></MapDemo2> */}
       {/* <UseStateDemo title = {title}></UseStateDemo> */}
