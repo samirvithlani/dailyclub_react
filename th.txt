@@ -137,3 +137,16 @@ change --> DOM update...
 react  vdom ---> will compare changes with ogdom -->
 
 
+DOM:18:
+16 : function comp: ---> hooks introduce..
+hook: builtin funciton, lifecycle
+use key word start:
+
+html:
+Virtual dom:
+
+og : vcopy 
+
+change : vdom --> dom....
+
+ =compnsnt statevariable
