@@ -154,3 +154,22 @@ change : vdom --> dom....
  communication bw components:
 
  parent child componet
+
+
+ 
+
+ react routing...
+ npm install react-router-dom
+ index.js -->
+  <BrowserRouter> : - enable routing...
+  App.js
+
+<Routes>
+<Route>
+
+create component named Navbar --> bootstarp.
+
+create folder named netflix :
+NetflixHome
+NetflixShow
+:register thoses. app.js routes comp...

@@ -17,6 +17,10 @@ import { UseStateDemo } from "./components/harshika/UseStateDemo";
 import { Employees } from "./components/harshika/Employees";
 import { InputHandling } from "./components/input/InputHandling";
 import { Products } from "./components/input/Products";
+import { Navbar } from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import { NetflixHome } from "./components/netflix/NetflixHome";
+import { NetflixShows } from "./components/netflix/NetflixShows";
 
 function App() {
   // at time we can return only 1 tag.
@@ -27,9 +31,14 @@ function App() {
 
   return (
     <div className="App">
-      <Header title = {title}></Header>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path="/netflixhome" element={<NetflixHome/>}></Route>
+        <Route path="/netflixshows" element={<NetflixShows/>}></Route>
+      </Routes>
+      {/* <Header title = {title}></Header> */}
       {/* <InputHandling/> */}
-      <Products></Products>
+      {/* <Products></Products> */}
       {/* <MapDemo1></MapDemo1> */}
       {/* <MapDemo2></MapDemo2> */}
       {/* <UseStateDemo title = {title}></UseStateDemo> */}
