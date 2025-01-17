@@ -21,6 +21,8 @@ import { Navbar } from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import { NetflixHome } from "./components/netflix/NetflixHome";
 import { NetflixShows } from "./components/netflix/NetflixShows";
+import { NetflixDashboard } from "./components/netflix/NetflixDashboard";
+import { Error404 } from "./components/Error404";
 
 function App() {
   // at time we can return only 1 tag.
@@ -33,8 +35,11 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Routes>
+        <Route path="/" element={<NetflixDashboard/>}></Route>
         <Route path="/netflixhome" element={<NetflixHome/>}></Route>
         <Route path="/netflixshows" element={<NetflixShows/>}></Route>
+        {/* <Route path="/*" element={<h1>Error</h1>}></Route> */}
+        <Route path="/*" element ={<Error404/>}></Route>
       </Routes>
       {/* <Header title = {title}></Header> */}
       {/* <InputHandling/> */}
