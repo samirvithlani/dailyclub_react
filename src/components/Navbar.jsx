@@ -34,6 +34,11 @@ export const Navbar = () => {
               <Link class="nav-link" to="/netflixshows">
                 shows
               </Link>
+            </li>    
+            <li class="nav-item">
+              <Link class="nav-link" to="/formdemo1">
+                form demo1
+              </Link>
             </li>        
             
             <li class="nav-item">

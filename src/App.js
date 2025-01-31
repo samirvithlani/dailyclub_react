@@ -25,6 +25,7 @@ import { NetflixDashboard } from "./components/netflix/NetflixDashboard";
 import { Error404 } from "./components/Error404";
 import FindTheBombGame from "./components/FindTheBombGame";
 import { Play } from "./components/netflix/Play";
+import { FormDemo1 } from "./components/forms/FormDemo1";
 
 function App() {
   // at time we can return only 1 tag.
@@ -42,6 +43,7 @@ function App() {
         <Route path="/netflixshows" element={<NetflixShows/>}></Route>
         <Route path="/findbomb" element={<FindTheBombGame/>}></Route>
         <Route path="/play/:id" element = {<Play/>}></Route>
+        <Route path="/formdemo1" element= {<FormDemo1/>}></Route>
         {/* <Route path="/*" element={<h1>Error</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>
