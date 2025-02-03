@@ -99,12 +99,10 @@ export const FormDemo1 = () => {
           <h2>country = {output.country} </h2>
           <h1>HOBBIES</h1>
           <ul>
-            {
-              output.hobbies!= false &&
-              output.hobbies?.map((h)=>{
-                return <li>{h}</li>
-              })
-            }
+            {output.hobbies != false &&
+              output.hobbies?.map((h) => {
+                return <li>{h}</li>;
+              })}
           </ul>
         </div>
       )}

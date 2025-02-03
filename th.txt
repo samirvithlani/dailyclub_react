@@ -173,3 +173,16 @@ create folder named netflix :
 NetflixHome
 NetflixShow
 :register thoses. app.js routes comp...
+
+{
+  required:
+  {
+    value:true,message:"Name is Required*"
+  }
+}
+{
+        required:{
+            value:true,
+            message:"age is required *"
+        }   
+}
