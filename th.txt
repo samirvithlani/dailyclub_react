@@ -186,3 +186,9 @@ NetflixShow
             message:"age is required *"
         }   
 }
+
+useState:
+
+constructor:
+lifecycle function useEffect:
+to handle side effect we can use useEffect
