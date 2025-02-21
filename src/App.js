@@ -34,6 +34,7 @@ import { Data } from "./components/Data";
 import { Login } from "./components/Login";
 import { UseEffectDemo } from "./components/UseEffectDemo";
 import { UseEffectDemo2 } from "./components/UseEffectDemo2";
+import { FIndBomb1 } from "./components/FIndBomb1";
 
 function App() {
   // at time we can return only 1 tag.
@@ -57,6 +58,7 @@ function App() {
         <Route path="/data" element ={<Data/>}></Route>
         <Route path="/login" element ={<Login/>}></Route>
         <Route path="/useeffect" element ={<UseEffectDemo2/>}></Route>
+        <Route path="/findbomb1" element = {<FIndBomb1/>}></Route>
         {/* <Route path="/*" element={<h1>Error</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>
