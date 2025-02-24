@@ -192,3 +192,14 @@ useState:
 constructor:
 lifecycle function useEffect:
 to handle side effect we can use useEffect
+
+API : backend: urls:
+
+GET POST PUT PATCH DELETE
+as frontend :
+backend -->data -->frontend ->display
+frontend -->data--send --> backend --> save-->POST
+
+
+javascript: fetch
+react js :  axios

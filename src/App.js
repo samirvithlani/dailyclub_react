@@ -35,6 +35,10 @@ import { Login } from "./components/Login";
 import { UseEffectDemo } from "./components/UseEffectDemo";
 import { UseEffectDemo2 } from "./components/UseEffectDemo2";
 import { FIndBomb1 } from "./components/FIndBomb1";
+import DragonTigerGame from "./DragonTigerGame";
+import { DragonTigerGameImpl } from "./components/DragonTigerGameImpl";
+import MultiplierGame from "./components/MultiplierGame";
+import { ApiDemo1 } from "./components/apis/ApiDemo1";
 
 function App() {
   // at time we can return only 1 tag.
@@ -47,7 +51,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<NetflixDashboard/>}></Route>
+        <Route path="/" element={<FIndBomb1/>}></Route>
         <Route path="/netflixhome" element={<NetflixHome/>}></Route>
         <Route path="/netflixshows" element={<NetflixShows/>}></Route>
         <Route path="/findbomb" element={<FindTheBombGame/>}></Route>
@@ -59,6 +63,10 @@ function App() {
         <Route path="/login" element ={<Login/>}></Route>
         <Route path="/useeffect" element ={<UseEffectDemo2/>}></Route>
         <Route path="/findbomb1" element = {<FIndBomb1/>}></Route>
+        <Route path="/dt" element = {<DragonTigerGame/>}></Route>
+        <Route path="/dt2" element = {<DragonTigerGameImpl/>}></Route>
+        <Route path="/mt" element = {<MultiplierGame/>}></Route>
+        <Route path="/apidemo1" element = {<ApiDemo1/>}></Route>
         {/* <Route path="/*" element={<h1>Error</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>
