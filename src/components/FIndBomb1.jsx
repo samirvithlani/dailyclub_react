@@ -9,22 +9,30 @@ export const FIndBomb1 = () => {
   const [gameOver, setGameOver] = useState(false);
   const [message, setMessage] = useState("Find the bomb!");
   const [multiplier, setMultiplier] = useState(1);
-  // Move history array: each record stores tile, bet, multiplier, outcome and result.
   const [history, setHistory] = useState([]);
+  const [bombPositions, setBombPositions] = useState([]);
 
-  // Generate bomb positions based on the risk multiplier
-  const bombPositions = useMemo(() => {
+  // Function to generate bomb positions avoiding clicked tiles
+  const generateBombs = (multiplier) => {
     let bombsCount =
       multiplier === 1 ? 3 :
       multiplier === 2 ? 4 :
       multiplier === 4 ? 6 : 10;
-    
+
     const positions = new Set();
     while (positions.size < bombsCount) {
-      positions.add(Math.floor(Math.random() * totalTiles));
+      let randomTile = Math.floor(Math.random() * totalTiles);
+      if (!clickedTiles.includes(randomTile)) {
+        positions.add(randomTile);
+      }
     }
     return Array.from(positions);
-  }, [totalTiles, multiplier]);
+  };
+
+  // Update bombs when the multiplier changes
+  React.useEffect(() => {
+    setBombPositions(generateBombs(multiplier));
+  }, [multiplier]);
 
   console.log("Bombs at:", bombPositions); // Debugging
 

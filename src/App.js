@@ -39,6 +39,8 @@ import DragonTigerGame from "./DragonTigerGame";
 import { DragonTigerGameImpl } from "./components/DragonTigerGameImpl";
 import MultiplierGame from "./components/MultiplierGame";
 import { ApiDemo1 } from "./components/apis/ApiDemo1";
+import { ApiDemo2 } from "./components/apis/ApiDemo2";
+import { ApiDemo3 } from "./components/apis/ApiDemo3";
 
 function App() {
   // at time we can return only 1 tag.
@@ -67,6 +69,8 @@ function App() {
         <Route path="/dt2" element = {<DragonTigerGameImpl/>}></Route>
         <Route path="/mt" element = {<MultiplierGame/>}></Route>
         <Route path="/apidemo1" element = {<ApiDemo1/>}></Route>
+        <Route path="/apidemo2" element = {<ApiDemo2/>}></Route>
+        <Route path="/apidemo3" element = {<ApiDemo3/>}></Route>
         {/* <Route path="/*" element={<h1>Error</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
       </Routes>
