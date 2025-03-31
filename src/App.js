@@ -42,6 +42,7 @@ import { ApiDemo1 } from "./components/apis/ApiDemo1";
 import { ApiDemo2 } from "./components/apis/ApiDemo2";
 import { ApiDemo3 } from "./components/apis/ApiDemo3";
 import { AddProduct } from "./components/apis/AddProduct";
+import { FormDemo6 } from "./components/forms/FormDemo6";
 
 function App() {
   // at time we can return only 1 tag.
@@ -74,7 +75,7 @@ function App() {
         <Route path="/apidemo3" element = {<ApiDemo3/>}></Route>
         {/* <Route path="/*" element={<h1>Error</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
-        <Route path="/addproduct" element = {<AddProduct/>}></Route>
+        <Route path="/addproduct" element = {<FormDemo6/>}></Route>
       </Routes>
       {/* <Header title = {title}></Header> */}
       {/* <InputHandling/> */}
