@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 
 export const FIndBomb1 = () => {
-  const gridSize = 5;
+  const gridSize = 7;
   const totalTiles = gridSize * gridSize;
 
   const [points, setPoints] = useState(5000);

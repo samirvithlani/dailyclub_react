@@ -43,6 +43,8 @@ import { ApiDemo2 } from "./components/apis/ApiDemo2";
 import { ApiDemo3 } from "./components/apis/ApiDemo3";
 import { AddProduct } from "./components/apis/AddProduct";
 import { FormDemo6 } from "./components/forms/FormDemo6";
+import AviatorGame from "./components/AviatorGame";
+import { Members } from "./components/Members";
 
 function App() {
   // at time we can return only 1 tag.
@@ -76,6 +78,7 @@ function App() {
         {/* <Route path="/*" element={<h1>Error</h1>}></Route> */}
         <Route path="/*" element ={<Error404/>}></Route>
         <Route path="/addproduct" element = {<FormDemo6/>}></Route>
+        <Route path="/members" element = {<Members/>}></Route>
       </Routes>
       {/* <Header title = {title}></Header> */}
       {/* <InputHandling/> */}

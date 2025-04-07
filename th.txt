@@ -203,3 +203,6 @@ frontend -->data--send --> backend --> save-->POST
 
 javascript: fetch
 react js :  axios
+
+
+transfer data from 1 comp 2 another usinng context
