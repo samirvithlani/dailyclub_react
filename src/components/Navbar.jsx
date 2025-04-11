@@ -103,6 +103,11 @@ export const Navbar = () => {
               MEMBERS
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/gennum">
+              GEN NUM
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

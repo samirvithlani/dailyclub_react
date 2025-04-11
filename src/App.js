@@ -45,6 +45,7 @@ import { AddProduct } from "./components/apis/AddProduct";
 import { FormDemo6 } from "./components/forms/FormDemo6";
 import AviatorGame from "./components/AviatorGame";
 import { Members } from "./components/Members";
+import { GenerateNumber } from "./components/GenerateNumber";
 
 function App() {
   // at time we can return only 1 tag.
@@ -79,6 +80,7 @@ function App() {
         <Route path="/*" element ={<Error404/>}></Route>
         <Route path="/addproduct" element = {<FormDemo6/>}></Route>
         <Route path="/members" element = {<Members/>}></Route>
+        <Route path="/gennum" element = {<GenerateNumber/>}></Route>
       </Routes>
       {/* <Header title = {title}></Header> */}
       {/* <InputHandling/> */}
