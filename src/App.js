@@ -46,6 +46,9 @@ import { FormDemo6 } from "./components/forms/FormDemo6";
 import AviatorGame from "./components/AviatorGame";
 import { Members } from "./components/Members";
 import { GenerateNumber } from "./components/GenerateNumber";
+import { ExpenseManager } from "./expensemanager/ExpenseManager";
+import { AddExpense } from "./expensemanager/AddExpense";
+import { ViewExpense } from "./expensemanager/ViewExpense";
 
 function App() {
   // at time we can return only 1 tag.
@@ -81,6 +84,9 @@ function App() {
         <Route path="/addproduct" element = {<FormDemo6/>}></Route>
         <Route path="/members" element = {<Members/>}></Route>
         <Route path="/gennum" element = {<GenerateNumber/>}></Route>
+        <Route path="/expensemanager" element = {<ExpenseManager/>}></Route>
+        <Route path="/addexpense" element = {<AddExpense/>}></Route>
+        <Route path="/viewexpense" element = {<ViewExpense/>}></Route>
       </Routes>
       {/* <Header title = {title}></Header> */}
       {/* <InputHandling/> */}
