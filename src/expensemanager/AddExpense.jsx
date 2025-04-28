@@ -9,7 +9,7 @@ export const AddExpense = () => {
     { id: 2, name: 'Medical' },
     { id: 3, name: 'Travel' },
   ]);
-  const [expenses, setExpenses] = useState([{}]);
+  const [expenses, setExpenses] = useState([]);
 
   useEffect(() => {
     if (localStorage.getItem('expense') == null) {
@@ -20,9 +20,11 @@ export const AddExpense = () => {
   const navigate = useNavigate();
 
   const submitHandler = (data) => {
+    data.id = Math.floor(Math.random()*1000)
     let expFromLocalStorage = localStorage.getItem('expense'); //string...
     console.log(expFromLocalStorage);
     let expObject = JSON.parse(expFromLocalStorage);
+    //expObject = {...expObject,id:Math.floor(Math.random()*1000)}
     console.log(expObject);
     expObject.push(data);
     localStorage.setItem('expense', JSON.stringify(expObject));

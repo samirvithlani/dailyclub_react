@@ -49,6 +49,7 @@ import { GenerateNumber } from "./components/GenerateNumber";
 import { ExpenseManager } from "./expensemanager/ExpenseManager";
 import { AddExpense } from "./expensemanager/AddExpense";
 import { ViewExpense } from "./expensemanager/ViewExpense";
+import { ProduComponent } from "./components/ProduComponent";
 
 function App() {
   // at time we can return only 1 tag.
@@ -87,6 +88,7 @@ function App() {
         <Route path="/expensemanager" element = {<ExpenseManager/>}></Route>
         <Route path="/addexpense" element = {<AddExpense/>}></Route>
         <Route path="/viewexpense" element = {<ViewExpense/>}></Route>
+        <Route path="/prodcomp" element = {<ProduComponent/>}></Route>
       </Routes>
       {/* <Header title = {title}></Header> */}
       {/* <InputHandling/> */}

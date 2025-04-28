@@ -9,7 +9,14 @@ export const ViewExpense = () => {
         setexpenseList(JSON.parse(localStorage.getItem("expense")))
       
     }, [])
-    
+    const deleteExpense = (id)=>{
+        var expense = JSON.parse(localStorage.getItem("expense"))
+        console.log(expense)
+        var filtExpenses = expense.filter((exp)=>exp.id != id)
+        console.log(filtExpenses)
+        localStorage.setItem('expense', JSON.stringify(filtExpenses));
+        setexpenseList(filtExpenses)
+    }
   return (
     <div>
         <h1>VIEW EXEPNSE..</h1>
@@ -19,6 +26,7 @@ export const ViewExpense = () => {
                     <th>title</th>
                     <th>amount</th>
                     <th>cat</th>
+                    <th>ACTION</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -28,6 +36,9 @@ export const ViewExpense = () => {
                                 <td>{exp.exptitle}</td>
                                 <td>{exp.amount}</td>
                                 <td>{exp.cat}</td>
+                                <td>
+                                    <button onClick={()=>{deleteExpense(exp.id)}} className='btn btn-danger'>DELETE</button>
+                                </td>
                             </tr>
                         })
                     }

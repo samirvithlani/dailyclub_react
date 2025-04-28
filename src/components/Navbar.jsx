@@ -36,6 +36,13 @@ export const Navbar = () => {
                 EXPENSE MANAGER
               </Link>
             </li>
+            <li class="nav-item active">
+              
+              <Link to="/prodcomp" className="nav-link">
+              prodcomp
+              </Link>
+            </li>
+            
 
             {/* <li class="nav-item">
               <Link class="nav-link" to="/netflixshows">

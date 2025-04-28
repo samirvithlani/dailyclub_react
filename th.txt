@@ -206,3 +206,10 @@ react js :  axios
 
 
 transfer data from 1 comp 2 another usinng context
+
+
+statte managmeent library:
+redux:
+
+ui -->action --> store -->ui
+
